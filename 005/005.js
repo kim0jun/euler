@@ -32,18 +32,14 @@ console.log(l) //==>232792560
 
 var minMutiple = 2;
 while(1){
-    // 카운트는 반복문을통해 약수 체크도중 실패한 숫자(시도횟수)
-    var count = 0;
+    minMutiple++;
     for(var i = 2;i<=20;i++){
-        count = i
-        if(minMutiple%i != 0){
-            minMutiple++;
+        if(minMutiple%i != 0){   
             break;
-        //공약수인경우
         }        
-    }
-    if(count == 20){
-        console.log(minMutiple) // ==> 232792560;
-        return 0;
-    }
+        if(i == 20){
+            console.log(minMutiple) // ==> 232792560;
+            return 0;
+        }
+    }    
 }
