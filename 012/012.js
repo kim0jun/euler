@@ -18,9 +18,7 @@
 
 var trNumber = 0 ;
 var maxLength = 0;
-var i = 1;
-var trNumber = 0;
-for(i=1;maxLength<500;i++){
+for(var i=1;maxLength<500;i++){
     var factorCount = 0;
     trNumber = i*(i+1)/2;
     for(j=1;j<Math.sqrt(trNumber);j++){
@@ -29,3 +27,4 @@ for(i=1;maxLength<500;i++){
     maxLength = Math.max(maxLength,factorCount*2)
 }
 console.log(trNumber) // => 76576500;
+
