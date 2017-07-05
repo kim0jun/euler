@@ -10,6 +10,10 @@ for i in range(3,1000):
 print(sum) # => 233168
 
 
+# other solution
+
+# 합의 공식을 이용하여 해결
+
 def sumOfRange(distance,range):
     length = math.floor(range/distance)
     return length*(length+1)/2*distance
