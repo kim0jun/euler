@@ -1,12 +1,14 @@
-n = 600851475143
-m = 0
-i = 2
-while(n>1)
-    if(n%i == 0)
-        n /= i
-        m = i
+num = 600851475143
+maxPrimer = 0
+primer = 2
+
+while num != 1
+    if num % primer == 0
+        maxPrimer = primer
+        num /= primer
     else
-        i += 1
+        primer += 1
     end
 end
-p m #=>6857;
+
+p maxPrimer # => 6857

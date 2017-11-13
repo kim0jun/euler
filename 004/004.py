@@ -1,17 +1,13 @@
+startNum = 100
+endNum   = 999
+m        = 0;   
 
-numStr          = ""
-reverseStr      = ""
-biggestNum      = 0
+for i in range(startNum, endNum): 
+    for k in range(i,endNum):
+        mulNum = i * k
+        mulStr = str(mulNum)
+        if mulStr == ''.join(reversed(mulStr)) and mulNum > m:
+            m = mulNum
 
-minNum   = 100
-maxNum   = 1000
 
-for a in range(minNum,maxNum):
-    for b in range(a,maxNum):
-        numStr = str(a*b)
-        reverseStr = numStr[::-1]
-        biggestNum =  a*b if (numStr == reverseStr and a*b > biggestNum)  else biggestNum
-
-print(biggestNum) #=>906609
-
-print("sdvs"[1:3])
+print(m) # => 906609

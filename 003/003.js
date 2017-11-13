@@ -13,5 +13,4 @@ for(var i=2;n != 1;i){
         i++
     }
 }
-
 console.log(maxPrimer) // => 6857

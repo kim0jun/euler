@@ -1,11 +1,12 @@
-n = 600851475143
-m = 0
-i = 2
-while(n>1):
-    if(n%i == 0):
-        n = n/i
-        m = i
-    else:
-        i += 1
+num = 600851475143
+maxPrimer = 0
+primer = 2
 
-print(m) #=> 6857
+while num != 1 :
+    if num % primer == 0:
+        maxPrimer = primer
+        num /= primer
+    else:
+        primer += 1
+
+print(maxPrimer) # ==> 6857

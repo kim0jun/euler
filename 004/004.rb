@@ -1,14 +1,16 @@
-numStr      = ""
-reverseStr  = ""
-mostNum     = 0
-startNum    = 100
-endNum      = 1000
+startNum = 100
+endNum   = 999
+m        = 0;   
 
-for i in startNum...endNum
-    for j in i...endNum
-        numStr     = (i*j).to_s
-        reverseStr = numStr.reverse
-        mostNum    = (numStr != reverseStr || mostNum > i*j)?mostNum:i*j
+for i in startNum..endNum
+    for k in i..endNum
+        mulNum = i * k
+        mulStr = "#{mulNum}"
+        if mulStr == mulStr.reverse and mulNum > m
+            m = mulNum
+        end
     end
 end
-p mostNum #=>906609
+
+
+p "#{m}"# => 906609
