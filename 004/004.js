@@ -17,3 +17,12 @@ for(var a=startNum;a<=lastNum;a++){
 }
 console.log(m) // => 906609
 
+//일반식
+ for(var i=0,j=0;i<=100000;i++)
+	j+=i
+console.log(j)
+
+
+1~9
+console.log(1+11*9*10/2)
+
